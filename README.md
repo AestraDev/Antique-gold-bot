@@ -22,6 +22,8 @@
 
 ## License
 
+License called **Attribution-NonCommercial-ShareAlike 4.0 International** is used in code
+
 
 --------------------------------------------
 
