@@ -55,7 +55,7 @@
 ## Community Server
 
 <center>
-  <p align="center"> <a href="https://discord.gg/zrhMCbmTMF"><img src="https://invidget.switchblade.xyz/zrhMCbmTMF"/></a></center>
+  <p align="center"> <a href="https://discord.gg/G4BSt8YfRt"><img src="https://invidget.switchblade.xyz/G4BSt8YfRt"/></a></center>
 </p>
 <br><br>
 
