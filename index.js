@@ -171,4 +171,4 @@ client.on("guildMemberAdd", async member => {
 
 //--------Login-via-Token-----------------
 
-client.login("ODM3Mjk5Mjk3NjYxMzUzOTk0.YIqhvA.ktCuBfieZ3SC93OD8LygapgSLC4");
+client.login("Your Token Here");
