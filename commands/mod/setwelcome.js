@@ -6,7 +6,7 @@
   */
   
 const Discord = require("discord.js")
-const db = require("quick.db")
+const db = require("mongoose")
 
 module.exports = {
   name: "setwelcome",

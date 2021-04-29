@@ -6,7 +6,7 @@
   */
   
 const Discord = require('discord.js');
-const ms = require('parse-ms');
+const ms = require('ms');
 
 module.exports = {
 	name: 'hunt',

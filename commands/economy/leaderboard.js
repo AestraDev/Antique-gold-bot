@@ -7,7 +7,8 @@
   
 const { MessageEmbed } = require('discord.js');
 
-const db = require('quick.db');
+const db = require('mongoose');
+
 module.exports = {
 	name: 'leaderboard',
 

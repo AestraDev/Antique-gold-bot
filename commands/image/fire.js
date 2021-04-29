@@ -7,7 +7,7 @@
   
 const Discord = require('discord.js');
 const AmeClient = require('amethyste-api');
-const AmeAPI = new AmeClient(process.env.AME_API);
+const AmeAPI = new AmeClient("./config.json");
 
 module.exports = {
     

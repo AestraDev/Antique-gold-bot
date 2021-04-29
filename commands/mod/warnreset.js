@@ -5,7 +5,7 @@
  * For more information, see README.md and LICENSE
   */
   
-const db = require("quick.db");
+const db = require("mongoose");
 module.exports = {
   name: "resetwarns",
 	cooldown:10000,

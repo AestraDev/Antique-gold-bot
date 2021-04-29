@@ -45,7 +45,8 @@ module.exports = {
 			embed.addField(
 				`> category `,
 				'`commands`'
-			);				.setFooter(
+			);				
+			embed.setFooter(
 					`footer`
 				);
 			message.channel.send(embed);

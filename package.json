@@ -11,12 +11,34 @@
     "start": "node index.js"
   },
   "dependencies": {
-    
-      },
+    "amethyste-api": "^1.1.5",
+    "ascii-table": "0.0.9",
+    "canvacord": "^5.2.0",
+    "canvas-constructor": "^4.1.0",
+    "clear": "^0.1.0",
+    "discord-giveaways": "^4.5.1",
+    "discord-image-generation": "^1.4.9",
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0",
+    "figlet": "^1.5.0",
+    "got": "^11.8.2",
+    "mongoose": "^5.12.6",
+    "parse-ms": "^3.0.0",
+    "relevant-urban": "^2.0.0",
+    "something-random-on-discord": "^3.4.4",
+    "superagent": "^6.1.0",
+    "weather-js": "^2.0.0"
+  },
   "engines": {
     "node": "12.x"
   },
   "repository": {
     "url": "https://github.com/AestraDev/Antique-gold-bot"
-  }
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }

