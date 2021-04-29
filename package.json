@@ -3,7 +3,7 @@
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
   "name": "antique-gold",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A bot made by team devZ for all basic needs",
   "main": "index.js",
   "config": "./config.json",
@@ -17,7 +17,7 @@
     "node": "12.x"
   },
   "repository": {
-    "url": ""
+    "url": "https://github.com/AestraDev/Antique-gold-bot"
   },
   "license": "CC"
 }
