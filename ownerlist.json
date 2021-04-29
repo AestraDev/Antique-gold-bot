@@ -1,11 +1,5 @@
-/* add your user id to add yourself in owners 
 
- Example  = 
- {
-  "owners": ["id","2id"]
-  }
-  
-*/
+ 
 
 {
   "owners": [""]
