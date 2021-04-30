@@ -5,7 +5,7 @@
  * For more information, see README.md and LICENSE
   */
   
-const db = require("mongoose");
+const db = require("quickmongo");
 
 module.exports = {
   name: "unmute",

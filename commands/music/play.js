@@ -26,3 +26,4 @@ run: async(client, message, args) =>{
     client.player.play(message, args.join(" "), { firstResult: true });
   }
 };
+//PKAY KARO

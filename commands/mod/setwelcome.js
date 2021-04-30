@@ -6,7 +6,7 @@
   */
   
 const Discord = require("discord.js")
-const db = require("mongoose")
+const db = require("quickmongo")
 
 module.exports = {
   name: "setwelcome",
@@ -22,7 +22,7 @@ module.exports = {
       return message.channel.send("Please Mention the channel first")
     }
     
-    db.set(`welchannel_${message.guild.id}`, channel.id)
+    quickdb.set(`welchannel_${message.guild.id}`, channel.id)
     
     message.channel.send(`Welcome Channel is seted as ${channel}`)
   }

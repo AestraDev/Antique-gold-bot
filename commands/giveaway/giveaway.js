@@ -4,7 +4,7 @@
  * This software is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
  * For more information, see README.md and LICENSE
   */
-  
+
 
 const { MessageEmbed } = require('discord.js');
 const ms = require('ms');
@@ -36,37 +36,37 @@ module.exports = {
 		}
 
 		let giveawayDuration = args[1];
-		
+
 		if (!giveawayDuration || isNaN(ms(giveawayDuration))) {
 			return message.channel.send(':x: Invalid duration');
 		}
 
 		let giveawayNumberWinners = args[2];
 
-		if (isNaN(giveawayNumberWinners) || parseInt(giveawayNumberWinners) <= 0) {
+	 	if (isNaN(giveawayNumberWinners) || parseInt(giveawayNumberWinners) <= 0) {
 			return message.channel.send(
-				':x: Invalid winner numbers'
+				':x: Invalid winnerCount'
 			);
 		}
 
-	   let giveawayPrize = args.slice(3).join(' ');
-		
+		let giveawayPrize = args.slice(3).join(' ');
+
 
 		if (!giveawayPrize) {
 			return message.channel.send(':x: Invalid Prize');
 		}
 
-	
+
 		client.giveawaysManager.start(giveawayChannel, {
-			
+
 			time: ms(giveawayDuration),
 
 			prize: giveawayPrize,
-			
-			winnerCount: giveawayNumberWinners,
-			
+
+      winnerCount: parseInt(args[1]),
+
 			hostedBy: client.gg.hostedBy ? message.author : null,
-			
+
 			messages: {
 
 				giveaway:

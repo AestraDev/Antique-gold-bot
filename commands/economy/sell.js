@@ -7,7 +7,7 @@
   
 
 const Discord = require('discord.js');
-const db = require("mongoose")
+const db = require("quickmongo")
 
 module.exports = {
 	

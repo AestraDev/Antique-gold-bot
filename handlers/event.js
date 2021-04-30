@@ -13,7 +13,6 @@ module.exports = (client) => {
 		for (const file of events) {
 			const evt = require(`../events/${dirs}/${file}`);
 			const eName = file.split('.')[0];
-      console.log(`Event Loaded: ${dirs}/${file}`);
 			client.on(eName, evt.bind(null, client));
 		}
 	};

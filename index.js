@@ -6,7 +6,7 @@ const {
 } = require("discord.js");
 const { config } = require("dotenv");
 const { prefix, token } = require("./config.json");
-const db = require("mongoose");
+const  { Database }  = require("quickmongo");
 const client = new Client({
   disableEveryone: true
 });
@@ -14,13 +14,16 @@ const canvas = require("canvacord");
 const Cooldown = new Collection();
 const ms = require("ms");
 const fs = require("fs");
+const { Player} = require("discord-player");
+client.player = new Player(client);
+client.db =  new Database("CLUSTER URL HERE")
 client.config = require("./config.json");
+
 client.emotes = client.config.emotes;
 client.filters = client.config.filters;
 client.commands = new Collection();
 client.aliases = new Collection();
 client.queue = new Map();
-client.db = db;
 client.gg = require("./config.json");
 client.ownerlist = require("./ownerlist.json");
 client.commands = new Collection();
@@ -30,6 +33,12 @@ client.aliases = new Collection();
 ["command", "event"].forEach(handler => {
   require(`./handlers/${handler}`)(client);
 });
+
+
+client.db.on("ready",() => {
+  
+  console.log(`CONNECTED WITH DATABASE `)
+})
 client.on("message", async message => {
   if (message.author.bot) return;
   if (!message.guild) return;
@@ -122,9 +131,9 @@ client.on("messageUpdate", function(message, channel) {
 // -----------------------Message Counter-----------------------------
 
 client.on("message", async message => {
-  db.add(`globalMessages_${message.author.id}`, 1);
+  client.db.add(`globalMessages_${message.author.id}`, 1);
 
-  db.add(`serverMessages_${message.guild.id}_${message.author.id}`, 1);
+  client.db.add(`serverMessages_${message.guild.id}_${message.author.id}`, 1);
 });
 
 // -----------------------PING AND REPLY-----------------------------
@@ -148,7 +157,7 @@ client.on("guildMemberAdd", async member => {
 
   const canva = new CanvasSenpai();
 
-  let chx = db.get(`welchannel_${member.guild.id}`);
+  let chx = client.db.get(`welchannel_${member.guild.id}`);
 
   if (chx === null) {
     return;
@@ -171,4 +180,4 @@ client.on("guildMemberAdd", async member => {
 
 //--------Login-via-Token-----------------
 
-client.login("ODM3Mjk5Mjk3NjYxMzUzOTk0.YIqhvA.ktCuBfieZ3SC93OD8LygapgSLC4");
+client.login("TOKEN HERE");
