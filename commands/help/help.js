@@ -43,11 +43,31 @@ module.exports = {
 					`**antique-gold prefix is  \`a!\`**. Use \`a!help {commamndname}\` for more info.  `
 				);
 			embed.addField(
-				`> category `,
-				'`commands`'
-			);				
+				`> Basic `,
+				'`advice`,`amazeme`,`announce`,`ascii`,`clyde`,`corona`,`dm`,`emojify`,`github`,`meme`,`ping`,`reddit`,`uptime`,`urban`,`weather`,`whois`,`wiki`'
+			)
+				embed.addField(
+				`> Economy `,
+				'`addmoney`,`balance`,`beg`,`buy`,`daily`,`deposit`,`fish`,`givemoney`,`hunt`,`inventory`,`leaderboard`,`rob`,`sell`,`slots`,`subtractmoney`,`use`,`withdraw`,`work`'
+			)	
+				embed.addField(
+				`> Giveaway `,
+				'`gstart`,`greroll`,`gend`'
+			)
+				embed.addField(
+				`> Image `,
+				'`amazing`,`anime`,`approved`,`av`,`comment`,`delete`,`fire`,`freeze`,`prison`,`rainbow`,`respect`,`shit`,`slap`,`trash`,`wanted`,`wasted`'
+			)
+				embed.addField(
+				`> Mod `,
+				'`ban`,`editsnipe`,`kick`,`lock`,`mute`,`nick`,`poll`,`purge`,`removerole`,`setwelcome`,`slowmode`,`snipe`,`unlock`,`unmute`,`voicekick`,`warn`,`warnings`,`warnreset`'
+			)
+				embed.addField(
+				`> Music `,
+				'`Clear-queue`,`filter-list`,`filters`,`loop`,`now-playing`,`pause`,`play`,`queue`,`resume`,`search`,`shuffle`,`skip`,`stop`'
+			)
 			embed.setFooter(
-					`footer`
+					`Thank-you`
 				);
 			message.channel.send(embed);
 		}
