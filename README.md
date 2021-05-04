@@ -14,7 +14,7 @@
 **Antique Gold contain 50+ commands which includes music, moderation , fun, image, economy and more..**
 
 
-<p align="center"> <img src="https://i.ibb.co/0sM4mm5/unknown.png" alt="commands.png"> </p>
+<p align="center"> <img src="https://media.discordapp.net/attachments/838022532082040852/839037028406132756/unknown.png?width=494&height=513" alt="commands.png"> </p>
 
  
  
