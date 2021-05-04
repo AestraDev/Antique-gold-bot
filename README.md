@@ -29,6 +29,19 @@ License called **Attribution-NonCommercial-ShareAlike 4.0 International** is use
 
 --------------------------------------------
 
+## Tutorial 
+
+
+[![Tutorial by Aestra Tech ](https://img.youtube.com/vi/F43c2AehaUs/0.jpg)](http://www.youtube.com/watch?v=43c2AehaUs)
+
+
+
+
+
+--------------------------------------------
+
+
+
 ## Setting up The Bot
 
 *you might be wondering how we can set up bot don't worry i am giving you an basic knowlege about it*
