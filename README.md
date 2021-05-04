@@ -32,7 +32,7 @@ License called **Attribution-NonCommercial-ShareAlike 4.0 International** is use
 ## Tutorial 
 
 
-[![Tutorial by Aestra Tech ](https://img.youtube.com/vi/F43c2AehaUs/0.jpg)](http://www.youtube.com/watch?v=43c2AehaUs)
+<p align="center"> [![Tutorial by Aestra Tech ](https://img.youtube.com/vi/F43c2AehaUs/0.jpg)](https://www.youtube.com/watch?v=F43c2AehaUs) </p>
 
 
 
