@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const AmeClient = require('amethyste-api');
-const AmeAPI = new AmeClient("./config.json");
-
+const AmeAPI = new AmeClient("AME TOKEN HERE");
 
 module.exports = {
    
