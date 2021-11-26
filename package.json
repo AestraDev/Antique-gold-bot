@@ -24,6 +24,7 @@
     "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
     "figlet": "^1.5.0",
+    "ffmpeg-static": "^4.4.0",
     "got": "^11.8.2",
     "opusscript": "0.0.8",
     "parse-ms": "^3.0.0",
