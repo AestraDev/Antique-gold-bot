@@ -8,7 +8,7 @@ const { config } = require("dotenv");
 const { prefix, token } = require("./config.json");
 const  { Database }  = require("quickmongo");
 const client = new Client({
-  disableEveryone: true
+  intents: ["GUILDS"]
 });
 const canvas = require("canvacord");
 const Cooldown = new Collection();
