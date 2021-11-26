@@ -77,7 +77,7 @@ Your browser does not support the video tag.
  
  
  <center>
-  <p align="center"> <a href="https://discord.gg/f4ceEkNU3s"><img src="https://invidget.switchblade.xyz/f4ceEkNU3s"/></a></center>
+  <p align="center"> <a href="https://discord.gg/e3UsxCrMHQ"><img src="https://invidget.switchblade.xyz/e3UsxCrMHQ"/></a></center>
 </p>
 
 <br><br>
@@ -86,7 +86,7 @@ Your browser does not support the video tag.
 ## Community Server
 
 <center>
-  <p align="center"> <a href="https://discord.gg/G4BSt8YfRt"><img src="https://invidget.switchblade.xyz/G4BSt8YfRt"/></a></center>
+  <p align="center"> <a href="https://discord.gg/e3UsxCrMHQ"><img src="https://invidget.switchblade.xyz/e3UsxCrMHQ"/></a></center>
 </p>
 <br><br>
 
