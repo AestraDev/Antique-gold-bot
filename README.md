@@ -32,7 +32,7 @@ License called **Attribution-NonCommercial-ShareAlike 4.0 International** is use
 ## Tutorial 
 
 
-<p align="center">[![Tutorial](https://img.youtubecom/vi/F43c2AehaUs)](https://youtu.be/F43c2AehaUs) </p>
+<p align="center">[![Tutorial](https://img.youtubecom/vi/F43c2AehaUs/0.jpg)](https://youtube.com/watch?v=F43c2AehaUs) </p>
 
 
 
