@@ -83,10 +83,3 @@ Your browser does not support the video tag.
 <br><br>
 
 -------------------------------------------------------------------------------------------
-  <p align="center"> <a href="https://discord.gg/e3UsxCrMHQ"><img src="https://invidget.switchblade.xyz/e3UsxCrMHQ"/></a></center>
-</p>
-<br><br>
-
----------------------------------------------------------------------------------------------
-
-
