@@ -32,13 +32,7 @@ License called **Attribution-NonCommercial-ShareAlike 4.0 International** is use
 ## Tutorial 
 
 
-<p align="center"> <video width="320" height="240" controls>
-  <source src="https://www.youtube.com/watch?v=F43c2AehaUs" type="video/mp4">
-  <source src="https://www.youtube.com/watch?v=F43c2AehaUs" type="video/ogg">
-Your browser does not support the video tag.
-</video> </p>
-
-
+<p align="center">[![Tutorial](https://img.youtu.be/F43c2AehaUs)](https://youtu.be/F43c2AehaUs) </p>
 
 
 
