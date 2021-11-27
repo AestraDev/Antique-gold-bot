@@ -3,7 +3,7 @@
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
   "name": "antique-gold",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A bot made by team devZ for all basic needs",
   "main": "index.js",
   "config": "./config.json",
