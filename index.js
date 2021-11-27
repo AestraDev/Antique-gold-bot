@@ -7,8 +7,9 @@ const {
 const { config } = require("dotenv");
 const { prefix, token } = require("./config.json");
 const  { Database }  = require("quickmongo");
+// Must enable these intents of your bot in dev portal
 const client = new Client({
-  intents: ["GUILDS"]
+  intents: ["GUILDS", "GUILDS_MESSAGES", "GUILD_MEMBERS"]
 });
 const canvas = require("canvacord");
 const Cooldown = new Collection();
