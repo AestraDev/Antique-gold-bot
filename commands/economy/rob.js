@@ -41,7 +41,7 @@ if (author !== null && timeout - (Date.now() - author) > 0) {
     let timeEmbed = new MessageEmbed()
     .setColor("RANDOM")
     .setDescription(`Too much rob might get you caught!\n\nRob again in ${time.seconds}s `);
-    message.channel.send(timeEmbed)
+    message.channel.send({ embeds: [timeEmbed]})
 
   } else {
 
@@ -51,7 +51,7 @@ if (author !== null && timeout - (Date.now() - author) > 0) {
 
 
   if (author2 < 200) {
-    return message.channel.send(moneyEmbed)
+    return message.channel.send({ embeds: [moneyEmbed]})
   }
 
   let moneyEmbed2 = new MessageEmbed()
@@ -59,7 +59,7 @@ if (author !== null && timeout - (Date.now() - author) > 0) {
   .setDescription(`${user.username} don't have anything that you can rob`);
 
   if (targetuser <= 0 || targetuser === null) {
-    return message.channel.send(moneyEmbed2)
+    return message.channel.send({ embeds: [moneyEmbed2]})
   }
 
   let authorembed = new MessageEmbed()
@@ -67,7 +67,7 @@ if (author !== null && timeout - (Date.now() - author) > 0) {
   .setDescription(`You cannot rob yourself!`);
 
   if(user.id === message.author.id) {
-    return message.channel.send(authorembed)
+    return message.channel.send({ embeds: [authorembed]})
   }
 
   let robber = message.author.username;
@@ -86,7 +86,7 @@ if (author !== null && timeout - (Date.now() - author) > 0) {
    .setDescription(`You got ${random} dollars\n Now you have total ${NewBal} dollars!`)
    .setColor("RANDOM")
 
-   message.channel.send(embed)
+   message.channel.send({ embeds: [embed]})
 
 await client.db.subtract(`money_${message.guild.id}_${user.id}.pocket`, random);
 await client.db.add(`money_${message.guild.id}_${message.author.id}.pocket`, random);

@@ -39,7 +39,7 @@ module.exports = {
     let timeEmbed = new MessageEmbed()
     .setColor("RANDOM")
     .setDescription(`You have collected your daily reward\n\nYou can collect again in \`\`${time.hours}h ${time.minutes}m ${time.seconds}\`\``);
-    message.channel.send(timeEmbed)
+    message.channel.send({ embeds: [timeEmbed]})
   } else {
     
 

@@ -48,7 +48,7 @@ module.exports = {
     .setColor("#7f89fd")
     .setTitle("Cooldown")
     .setDescription(`You have been warned from officers for continues begging.\nYou can beg again in \`${time.seconds}s\``);
-    message.channel.send(timeEmbed)
+    message.channel.send({ embeds: [timeEmbed]})
   } else {
 			let replies = [
 				'Alan',

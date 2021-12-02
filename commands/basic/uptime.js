@@ -27,7 +27,7 @@ module.exports = {
       .setColor("RANDOM")
       .setTitle(`My Uptime is **${days}d ${hours}h ${minutes}m ${seconds}s\n**`)
     
-    message.channel.send(upembed)
+    message.channel.send({ embeds: [upembed]})
     
   }
 };

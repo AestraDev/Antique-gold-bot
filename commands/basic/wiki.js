@@ -76,7 +76,7 @@ module.exports = {
 
     if (body.thumbnail) embed.setThumbnail(body.thumbnail.source);
 
-    message.channel.send(embed);
+    message.channel.send({ embeds: [embed]})
 
   }
 

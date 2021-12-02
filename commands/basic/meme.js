@@ -61,8 +61,7 @@ module.exports = {
 
       .setTimestamp();
 
-    return message.channel.send(Embed);
-
+ return message.channel.send({ embeds: [Embed]});
  
   }
 

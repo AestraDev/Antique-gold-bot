@@ -46,6 +46,6 @@ module.exports = {
 				`© Antique-Gold `,
 				'https://cdn.discordapp.com/avatars/781557752111431690/da9c119b6283ea7e11db3594bf8c5327.webp?size=4096'
 			);
-		return message.channel.send(embed);
+		return message.channel.send({ embeds: [embed]});
 	}
 };

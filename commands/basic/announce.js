@@ -28,6 +28,6 @@ module.exports = {
       return message.channel.send(`❌ | ` + "I Cannot Repeat Blank Message");
     let embed = new MessageEmbed().setDescription(`${say}`).setColor("RANDOM");
 
-    message.channel.send(embed);
+    message.channel.send({ embeds: [embed]});
   }
 };

@@ -63,7 +63,7 @@ let embed = new discord.MessageEmbed()
 
 .setThumbnail(result[0].current.imageUrl);
 
-   message.channel.send(embed)
+   message.channel.send({ embeds: [embed]})
 
 } catch(err) {
 

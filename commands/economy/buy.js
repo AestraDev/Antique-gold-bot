@@ -34,7 +34,7 @@ run: async(client, message, args) => {
 
     switch(args[0]) {
     case 'laptop':
-        if (author < 1000) return message.channel.send(elbed)
+        if (author < 1000) return message.channel.send({ embeds: [elbed]})
         
         await client.db.fetch(`laptop_${message.guild.id}_${user.id}`);
         await client.db.set(`laptop_${message.guild.id}_${user.id}`, 1)
@@ -45,7 +45,7 @@ run: async(client, message, args) => {
         .setDescription("You have purchased a laptop for 1000 coins\n\n To check use `a!inventory`");
 
         await client.db.subtract(`money_${message.guild.id}_${user.id}.pocket`, 1000)
-        message.channel.send(sbed)
+        message.channel.send({ embeds: [sbed]})
     break;
 
     case 'phone':
@@ -54,7 +54,7 @@ run: async(client, message, args) => {
         .setColor("RED")
         .setDescription(`You need 1000 antique coins to purchase a phone`);
 
-        if (author < 1000) return message.channel.send(eanp)
+        if (author < 1000) return message.channel.send({ embeds: [eanp]})
        
         await client.db.fetch(`antiquephone_${message.guild.id}_${user.id}`)
         await client.db.add(`antiquephone_${message.guild.id}_${user.id}`, 1)
@@ -65,7 +65,7 @@ run: async(client, message, args) => {
         .setDescription("You have purchased a phone for 1000 coins\n\n To check use `a!inventory`");
 
         await client.db.subtract(`money_${message.guild.id}_${user.id}.pocket`, 100)
-        message.channel.send(sanp)
+        message.channel.send({ embeds: [sanp]})
     break;
 
     case 'goldhat':
@@ -76,7 +76,7 @@ run: async(client, message, args) => {
         .setColor("RED")
         .setDescription(`You need 40000 antique coins to purchase a goldenhat`);
 
-        if (author < 40000) return message.channel.send(ehat)
+        if (author < 40000) return message.channel.send({ embeds: [ehat]})
        
         await client.db.fetch(`goldhat_${message.guild.id}_${user.id}`)
         await client.db.add(`goldhat_${message.guild.id}_${user.id}`, 1)
@@ -87,7 +87,7 @@ run: async(client, message, args) => {
         .setDescription("You have purchased a golden hat for 40000 coins\n\n To check use `a!inventory`");
 
         await client.db.subtract(`money_${message.guild.id}_${user.id}.pocket`, 40000)
-        message.channel.send(shat)
+        message.channel.send({ embeds: [shat]})
     break;
 		  
 
@@ -98,7 +98,7 @@ run: async(client, message, args) => {
         .setColor("RED")
         .setDescription("You need 100 antique coins to purchase a bug catcher");
 
-        if (author < 100) return message.channel.send(ebc);
+        if (author < 100) return message.channel.send({ embeds: [ebc]});
         let ibc = await client.db.get(`bugcatcher_${message.guild.id}_${user.id}`);
         if(ibc !== null) {
             if(ibc.rod === 1) return message.channel.send({ embed: { description: "You already have a bug catcher rod."}});
@@ -113,7 +113,7 @@ run: async(client, message, args) => {
         .setDescription("You have purchased a bug catcher for 100 coins\n\n To check use `a!inventory`");
 
         await client.db.subtract(`money_${message.guild.id}_${user.id}.pocket`, 100)
-        message.channel.send(sbc)
+        message.channel.send({ embeds: [sbc]})
     break;
 		case "fish":
     case "fishing":
@@ -121,7 +121,7 @@ run: async(client, message, args) => {
         .setColor("#FFFFFF")
         .setDescription(` You need 50 coins to purchase a fishing rod`);
 
-        if (author < 50) return message.channel.send(Embed6);
+        if (author < 50) return message.channel.send({ embeds: [Embed6]});
         let iffish = await client.db.get(`fish_${message.guild.id}_${user.id}`);
         if(iffish !== null) {
             if(iffish.rod === 1) return message.channel.send("You already have a fishing rod!");
@@ -135,7 +135,7 @@ run: async(client, message, args) => {
         .setDescription(` Purchased a Fishing rod For 50 Coins`);
 
         await client.db.subtract(`money_${message.guild.id}_${user.id}.pocket`, 50)
-        message.channel.send(Embed7)
+        message.channel.send({ embeds: [Embed7]})
     break;
 				case "hunt":
     case "hunting":
@@ -143,7 +143,7 @@ run: async(client, message, args) => {
         .setColor("RED")
         .setDescription(` You need 50 coins to purchase a Hunting Rifle`);
 
-        if (author < 50) return message.channel.send(Embed11);
+        if (author < 50) return message.channel.send({ embeds: [Embed11]});
         let ihunt = await client.db.get(`hunt_${message.guild.id}_${user.id}`);
         if(ihunt !== null) {
             if(ihunt.rod === 1) return message.channel.send("You already have a hunting rifle!");
@@ -157,7 +157,7 @@ run: async(client, message, args) => {
         .setDescription(` Purchased a Hunting rifle For 50 Coins`);
 
         await client.db.subtract(`money_${message.guild.id}_${user.id}.pocket`, 50)
-        message.channel.send(Embed8)
+        message.channel.send({ embeds: [Embed8]})
     break;
 	
 
@@ -168,7 +168,7 @@ run: async(client, message, args) => {
         .setColor("RED")
         .setDescription(`You need 300 coins to purchase a lottery`);
 
-        if (author < 300) return message.channel.send(Embed8)
+        if (author < 300) return message.channel.send({ embeds: [Embed8]})
        
         await client.db.fetch(`lottery_${message.guild.id}_${user.id}`)
         await client.db.add(`lottery_${message.guild.id}_${user.id}`, 1)
@@ -179,14 +179,14 @@ run: async(client, message, args) => {
         .setDescription("You have purchased a lottery for 300 coins\n\n To check use `a!inventory`");
 
         await client.db.subtract(`money_${message.guild.id}_${user.id}.pocket`, 300)
-        message.channel.send(sly)
+        message.channel.send({ embeds: [sly]})
     break;
 
     default:
         let embed3 = new Discord.MessageEmbed()
         .setColor("RED")
         .setDescription('Enter a valid item name')
-        message.channel.send(embed3)
+        message.channel.send({ embeds: [embed3]})
     break;
 
         }

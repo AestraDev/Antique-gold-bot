@@ -67,6 +67,6 @@ module.exports = {
 
 		// Worked hard by Colderry in finding and modify
 		//
-		message.channel.send(embed);
+		message.channel.send({ embeds: [embed]});
 	}
 };

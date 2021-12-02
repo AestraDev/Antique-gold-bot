@@ -50,7 +50,7 @@ module.exports = {
       .setTitle('Success')
       .setColor('GREEN')
       .setDescription(`**${user.username}** gave **${member.username}** \`${args[1]}\` antique coins`)
-     message.channel.send(moneybed)
+     message.channel.send({ embeds: [moneybed]})
 
   }
 }

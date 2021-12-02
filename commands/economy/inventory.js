@@ -44,6 +44,6 @@ module.exports = {
       .setDescription(`
       **Electronics**\nLaptop - \`${laptop}\`\nPhone - \`${phone}\`\n\n**Fashion**\nGold hat - \`${goldenhat}\`\n\n**Useful**\nBug Catcher - \`${bugcatcher}\`\nLottery - \`${lottery}\``)
 
-      message.channel.send(inventory)
+      message.channel.send({ embeds: [inventory]})
   }
 }

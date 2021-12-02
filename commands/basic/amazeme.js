@@ -40,7 +40,7 @@ module.exports = {
 					.setTimestamp()
 					.setColor('RANDOM');
 
-				message.channel.send(wow);
+				message.channel.send({ embeds: [wow]});
 			})
 			.catch(console.error);
 	}

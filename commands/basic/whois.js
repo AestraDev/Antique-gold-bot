@@ -72,6 +72,6 @@ module.exports = {
     .setFooter(`Asked by ${message.author.username}`, aicon  )
     .setTimestamp()
     
-    message.channel.send(embed)
+    message.channel.send({ embeds: [embed]})
     
   }}

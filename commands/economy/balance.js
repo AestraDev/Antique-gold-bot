@@ -50,6 +50,6 @@ module.exports = {
 				`<a:arrowright:803594076036661279> **Wallet:** <:coinn:803591792473276416>   ${bal}\n<a:arrowright:803594076036661279> **Bank:** <:coin:803591792473276416>  ${bank}\n<a:arrowright:803594076036661279> **Total Money:** <:coin:803591792473276416> ${TotalMoney}`
 			)
 			.setFooter('Antique Gold');
-				message.channel.send(moneyEmbed);
+				message.channel.send({ embeds: [moneyEmbed]});
 	}
 };
