@@ -48,7 +48,7 @@ module.exports = {
 				r => r.displayName.toLowerCase() === args.join(' ').toLocaleLowerCase()
 			) ||
 			message.member;
-		user.send(embed);
+		user.send({embeds: [embed]});
 		message.reply('I have send them DM <:Mail_32:804261018565214228>');
 	}
 }; 

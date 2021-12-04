@@ -21,7 +21,7 @@ module.exports = {
     .setTitle(`${user.username}'s Avatar!`)
     .setColor('#7289DA')
     .setImage(user.displayAvatarURL({ dynamic: true, size: 4096}))
-    message.channel.send(embed);
+    message.channel.send({embeds: [embed]});;
 
   }
 

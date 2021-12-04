@@ -5,11 +5,13 @@ const {
   MessageAttachment
 } = require("discord.js");
 const { config } = require("dotenv");
+const dotenv = require("dotenv");
+dotenv.config() 
 const { prefix, token } = require("./config.json");
 const  { Database }  = require("quickmongo");
 // Must enable these intents of your bot in dev portal
 const client = new Client({
-  intents: ["GUILDS", "GUILDS_MESSAGES", "GUILD_MEMBERS"]
+  intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS"]
 });
 const canvas = require("canvacord");
 const Cooldown = new Collection();
@@ -17,7 +19,7 @@ const ms = require("ms");
 const fs = require("fs");
 const { Player} = require("discord-player");
 client.player = new Player(client);
-client.db =  new Database("CLUSTER URL HERE")
+client.db =  new Database("mongodb+srv://foxbot:foxbot@hyplix.j83qp.mongodb.net/Foxy?retryWrites=true&w=majority")
 client.config = require("./config.json");
 
 client.emotes = client.config.emotes;
@@ -181,4 +183,4 @@ client.on("guildMemberAdd", async member => {
 
 //--------Login-via-Token-----------------
 
-client.login("TOKEN HERE");
+client.login(process.env.TOKEN);

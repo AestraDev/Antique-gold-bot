@@ -33,7 +33,7 @@ module.exports = {
       .setFooter(`Role added by ${message.author.username}`, aicon)
       .setTimestamp()
       
-      await message.channel.send(embed)
+      await message.channel.send({embeds: [embed]});
       
       target.roles.remove(rrole)
     

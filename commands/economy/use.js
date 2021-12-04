@@ -34,7 +34,7 @@ module.exports = {
             .setColor("RED")
             .setDescription("You don't have any lottery token\n\n To buy use `a!buy lottery`")
 
-            return message.channel.send(embed)
+            return message.channel.send({embeds: [embed]});
         }
 
         let money = client.db.fetch(`money_${message.guild.id}_${user.id}.pocket`)

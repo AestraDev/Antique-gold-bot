@@ -28,7 +28,7 @@ run: async (client, message, args) =>{
     .setTimestamp()
 		if(msg.image)embed.setImage(msg.image)
     
-    message.channel.send(embed)
+    message.channel.send({embeds: [embed]});
   
   }
 }

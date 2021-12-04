@@ -36,7 +36,7 @@ run: async (client, message, args) => {
       )
       
       .setFooter(client.user.username, client.user.displayAvatarURL())
-    message.channel.send(embed)
+    message.channel.send({embeds: [embed]});
 
 	}
 }

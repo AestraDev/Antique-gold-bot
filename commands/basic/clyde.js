@@ -36,7 +36,7 @@ module.exports = {
 			return message.channel.send('❎ An error occured, please try again!');
 		}
 		const attachment = new MessageAttachment(response.message, 'clyde.png');
-		return message.channel.send(attachment);
+		return mmessage.channel.send({files: [attachment]});
   
     }
 }

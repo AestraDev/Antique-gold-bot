@@ -18,10 +18,10 @@ module.exports = {
 				.setColor('#FF2400');
 
 			if (!command) {
-				return message.channel.send(noemx);
+				return message.channel.send({embeds: [noemx]});
 			} // Done
 			// so now in the commands, make the first letter caps and add a space between commas .... see what i do
-			let embed = new MessageEmbed()
+			let embed1w = new MessageEmbed()
 				.setTitle(command.name)
 				.setDescription(command.description ? command.description : 'Not Given')
 				.addField('Aliases', command.aliases ? command.aliases : 'None')
@@ -31,7 +31,8 @@ module.exports = {
 				.setColor('RANDOM')
 				.setFooter('Antique Gold', client.user.displayAvatarURL());
 
-			return message.channel.send(embed);
+			return message.channel.send({embeds: [embed1w]});
+		
 		} else {
 			const embed = new MessageEmbed()
 				//this line make a embed
@@ -69,7 +70,7 @@ module.exports = {
 			embed.setFooter(
 					`Thank-you`
 				);
-			message.channel.send(embed);
+			message.channel.send({embeds: [embed]});;
 		}
 	}
 };

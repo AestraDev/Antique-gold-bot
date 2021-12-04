@@ -33,7 +33,7 @@ module.exports = {
            .setTitle("Channel Updates")
            .setDescription(`${message.channel} has been placed under lockdown for ${time}`)
            .setColor("RANDOM");
-           message.channel.send(embed)
+           message.channel.send({embeds: [embed]});
 
            let time1 = (`${time}`)
            setTimeout(function(){
@@ -47,7 +47,7 @@ module.exports = {
            .setTitle("Channel Updates")
            .setDescription(`Locked has been lifted in ${message.channel}`)
            .setColor("RANDOM");
-           message.channel.send(embed2);
+           message.channel.send({embeds: [embed2]});
         }, ms(time1));
         message.delete();
     }

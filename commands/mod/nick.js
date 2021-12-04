@@ -19,7 +19,7 @@ module.exports = {
     let embed = new Discord.MessageEmbed()
     .setDescription("You don't have enough powers")
     .setColor("RANDOM")
-    return message.channel.send(embed)
+    return message.channel.send({embeds: [embed]});
   }
     
     if(!message.guild.me.hasPermission("MANAGE_NICKNAMES")) {
@@ -52,7 +52,7 @@ module.exports = {
   let embed = new Discord.MessageEmbed()
   .setDescription(`Successfully changed **${user.tag}** nickname to **${nick}**`)
   .setColor("GREEN")
-  message.channel.send(embed);
+  message.channel.send({embeds: [embed]});;
     
   await member.setNickname(nick).catch(err => message.channel.send({embed: {color: "RED", description: `Error: ${err}`}}))
     
