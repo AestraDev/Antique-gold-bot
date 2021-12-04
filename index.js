@@ -19,7 +19,7 @@ const ms = require("ms");
 const fs = require("fs");
 const { Player} = require("discord-player");
 client.player = new Player(client);
-client.db =  new Database("mongodb+srv://foxbot:foxbot@hyplix.j83qp.mongodb.net/Foxy?retryWrites=true&w=majority")
+client.db =  new Database("CLUSTER-URL-HERE")
 client.config = require("./config.json");
 
 client.emotes = client.config.emotes;
